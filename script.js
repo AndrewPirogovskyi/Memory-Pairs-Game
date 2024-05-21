@@ -26,7 +26,7 @@ function shuffle(o) {
 function startGame() {
     // Hide menu
     document.getElementById('menu').style.display = 'none';
-    document.getElementById('Click to start').style.display='block';
+    document.getElementById('clicktoStart').style.display='block';
     
     // Shuffle cards
     shuffle(cards);
