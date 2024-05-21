@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Memory Game</title>
+        <link rel = "stylesheet" href = "menu_styles.css">
+    </head>
+    <body>
+        <div class = "menu" id = "menu">
+            <h1>Welcome to the Memory Pairs Game</h1>
+            <button class = "start" onclick = "startGame()">Start Game</button>
+        </div>
+
+        <div id = "Click to start" style = "display: none;">
+            <h1>Click to start the game!</h1>
+            <p id = "text"></p>
+        </div>
+
+        <div id = "container">
+            <!-- Cards will be dynamically created here -->
+        </div>
+
+        <div id = "congratulations" style = "display: none;">
+            <h1>Congratulations!</h1>
+            <p id = "text"></p>
+        </div>
+            <script src = "script.js"></script>
+    </body>
+</html>
