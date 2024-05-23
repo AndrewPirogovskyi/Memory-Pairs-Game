@@ -17,6 +17,9 @@ var images = [
 var clone = images.slice(0); // duplicate array
 var cards = images.concat(clone); // merge two arrays
 
+// Double the number of cards for each item
+cards = cards.concat(cards);
+
 // Shuffle function
 function shuffle(o) {
     for (var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
@@ -24,6 +27,7 @@ function shuffle(o) {
 }
 
 function startGame() {
+    
     // Hide menu
     document.getElementById('menu').style.display = 'none';
     document.getElementById('clicktoStart').style.display='block';
@@ -86,9 +90,8 @@ function check(className) {
         }
     }, 500);
 }
-
 function win() {
-    if (counter === 5) {
+    if (counter === 10) {
         clearInterval(Interval);
         text.innerHTML = "Your time was " + seconds + ":" + tens;
         // Display congratulatory message

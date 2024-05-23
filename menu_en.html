@@ -9,24 +9,31 @@
     <body>
         <div class = "background">
             <div class = "menu" id = "menu">
-                <h1>Welcome to the Memory Pairs Game</h1>
                 <button class = "start" onclick = "startGame()">Start Game</button>
+                <button class = "language" onclick = "openPopup()">Language</button>
+                <!-- Hidden popup container -->
+                <div id = "popupContainer" class = "popup-container" style = "display: none;">
+                    <div class = "popup">
+                        <h2>Choose the Language</h2>
+                        <!-- Buttons in the popup window -->
+                        <a href = "menu_en.html"><button class = "popup-button">English</button></a>
+                        <a href = "menu_ua.html"><button class = "popup-button">Ukrainian</button></a>
+                    </div>
+                </div>
             </div>
-    
             <div id = "clicktoStart" style = "display: none;">
-                <h1>Click to start the game!</h1>
+                <div class = "title"><h2>Click to start the game!</h2></div>
                 <p id = "text"></p>
             </div>
-    
             <div id = "container">
                 <!-- Cards will be dynamically created here -->
             </div>
-    
             <div id = "congratulations" style = "display: none;">
                 <h1>Congratulations!</h1>
                 <p id = "text"></p>
             </div>  
         </div>
-            <script src = "script.js"></script>
+            <script src = "script_en.js"></script>
+            <script src = "popup.js"></script>
     </body>
 </html>
