@@ -64,6 +64,8 @@ function startGame() {
     }
 }
 function startTimer() {
+    document.getElementById('title').style.display = 'none';
+    
     text.innerHTML = 'Current time ' + seconds + ":" + tens;
     tens++;
     if (tens < 9) {
