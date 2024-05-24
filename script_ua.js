@@ -17,6 +17,9 @@ var images = [
 var clone = images.slice(0); // duplicate array
 var cards = images.concat(clone); // merge two arrays
 
+// Double the number of cards for each item
+cards = cards.concat(cards);
+
 // Shuffle function
 function shuffle(o) {
     for (var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
@@ -60,6 +63,8 @@ function startGame() {
     }
 }
 function startTimer() {
+    document.getElementById('title').style.display = 'none';
+    
     text.innerHTML = 'Поточний час ' + seconds + ":" + tens;
     tens++;
     if (tens < 9) {
@@ -87,9 +92,9 @@ function check(className) {
     }, 500);
 }
 function win() {
-    if (counter === 5) {
+    if (counter === 10) {
         clearInterval(Interval);
-        text.innerHTML = "Ваш час! " + seconds + ":" + tens;
+        text.innerHTML = "Ваш час був " + seconds + ":" + tens;
         // Display congratulatory message
         document.getElementById('congratulations').style.display = 'block';
     }

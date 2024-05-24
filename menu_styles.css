@@ -73,10 +73,14 @@ h3 {
 #seconds, #tens {
     font-size: 2em;
 }
+#text {
+    font-size: 25px;
+}
 #title {
     width: 30%;
-    margin-left: 50%;
-    background-color: black
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 #container {
     width: 75%;
