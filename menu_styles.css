@@ -58,34 +58,39 @@ body {
     background-color: transparent;
     color: white;
 }
+.congratulations_window {
+    text-align: center;
+    padding: 10px;
+}
 h1, h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 2.6em;
+    font-size: 2.5em;
     text-transform: uppercase;
 }
 h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 1.4em;
+    font-size: 2.1em;
     text-transform: uppercase;
 }
 #seconds, #tens {
     font-size: 2em;
 }
 #text {
-    font-size: 25px;
+    font-size: 27px;
 }
 #title {
-    width: 30%;
+    width: 35%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 #container {
-    width: 75%;
-    margin-left: 350px;
-    margin-right: 350px;
+    width: 60%;
+    padding-top: 10px;
+    margin-left: 21%;
+    margin-right: 21%;
 }
 #container:after {
     content: "";
@@ -94,10 +99,10 @@ h3 {
 }
 [data-view="card"] {
     transform: rotateY(180deg);
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     border: solid 1px #d3cece;
-    border-radius: 5px;
+    border-radius: 8px;
     float: left;
     margin: 10px;
     cursor: pointer;
@@ -106,13 +111,13 @@ h3 {
     background-size: 64px 128px;
 }
 .flipped {
-    transition: 0.6s;
+    transition: 0.5s;
     transform-style: preserve-3d;
     position: relative;
     transform: rotateY(0deg);
 }
 .reverse {
-    transition: 0.6s;
+    transition: 0.5s;
     transform-style: preserve-3d;
     position: relative;
     transform: rotateY(180deg);
@@ -125,24 +130,44 @@ h3 {
     transform: rotateY(0deg);
 }
 /* Icons */
-.correct[data-item="sass"], .flipped[data-item="sass"] {
-    background: url("https://cathydutton.co.uk/images/tech/sass.jpg") left center no-repeat #fff;
+.correct[data-item="1"], .flipped[data-item="1"] {
+    background: url("Cards/1.jpg") center no-repeat #fff;
     background-size: contain;
 }
-.correct[data-item="gulp"], .flipped[data-item="gulp"] {
-    background: url("https://cathydutton.co.uk/images/tech/gulp.jpg") left center no-repeat #fff;
+.correct[data-item="2"], .flipped[data-item="2"] {
+    background: url("Cards/2.jpg") center no-repeat #fff;
     background-size: contain;
 }
-.correct[data-item="grunt"], .flipped[data-item="grunt"] {
-    background: url("https://cathydutton.co.uk/images/tech/grunt.jpg") left center no-repeat #fff;
+.correct[data-item="3"], .flipped[data-item="3"] {
+    background: url("Cards/3.jpg") center no-repeat #fff;
     background-size: contain;
 }
-.correct[data-item="git"], .flipped[data-item="git"] {
-    background: url("https://cathydutton.co.uk/images/tech/git.jpg") left center no-repeat #fff;
+.correct[data-item="4"], .flipped[data-item="4"] {
+    background: url("Cards/4.jpg") center no-repeat #fff;
     background-size: contain;
 }
-.correct[data-item="css"], .flipped[data-item="css"] {
-    background: url("https://cathydutton.co.uk/images/tech/css.jpg") left center no-repeat #fff;
+.correct[data-item="5"], .flipped[data-item="5"] {
+    background: url("Cards/5.jpg") center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="6"], .flipped[data-item="6"] {
+    background: url("Cards/6.jpg") center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="7"], .flipped[data-item="7"] {
+    background: url("Cards/7.jpg") center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="8"], .flipped[data-item="8"] {
+    background: url("Cards/8.jpg") center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="9"], .flipped[data-item="9"] {
+    background: url("Cards/9.jpg") center no-repeat #fff;
+    background-size: contain;
+}
+.correct[data-item="10"], .flipped[data-item="10"] {
+    background: url("Cards/10.jpg") center no-repeat #fff;
     background-size: contain;
 }
 .popup-container {

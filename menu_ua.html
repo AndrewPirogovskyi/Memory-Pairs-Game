@@ -22,18 +22,21 @@
                 </div>
             </div>
             <div id = "clicktoStart" style = "display: none;">
-                <div id = "title"><h2>Натисніть для початку</h2></div>
+                <div id = "title"><h2>Натисніть, щоб розпочати</h2></div>
                 <center><p id = "text"></p></center>
             </div>
             <div id = "container">
                 <!-- Cards will be dynamically created here -->
             </div>
-            <div id = "congratulations" style = "display: none;">
-                <h1>Вітання!</h1>
-                <p id = "text"></p>
+            <div id = "congratulations" class = "popup-container" style = "display: none;">
+                <div class = "popup">
+                    <div class = "congratulations_window"><h1>Вітання, ви виграли!</h1></div>
+
+                    <center><a href = "menu_ua.html"><button class = "popup-button">Спробувати знову</button></a></center>
+                </div>
             </div>  
         </div>
-            <script src = "script_ua.js"></script>
-            <script src = "popup.js"></script>
+            <script src = "Scripts/script_ua.js"></script>
+            <script src = "Scripts/popup.js"></script>
     </body>
 </html>
