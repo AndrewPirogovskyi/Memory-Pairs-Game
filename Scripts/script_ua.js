@@ -4,6 +4,7 @@ var flippedCards = [];
 var counter = 0;
 var text = document.getElementById('text');
 var seconds = 0;
+var minutes = 0;
 var tens = 0;
 var appendTens = document.getElementById("tens");
 var appendSeconds = document.getElementById("seconds");
@@ -13,13 +14,11 @@ var images = [
     '6', '7', '8', '9', '10'
 ];
 var cards = images.concat(images); // Create pairs
-
 // Shuffle function
 function shuffle(o) {
     for (var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return o;
 }
-
 function startGame() {
     // Hide menu
     document.getElementById('menu').style.display = 'none';
@@ -49,7 +48,6 @@ function startGame() {
         };
     }
 }
-
 function compareCards() {
     if (resultsArray[0] === resultsArray[1]) {
         for (var i = 0; i < flippedCards.length; i++) {
@@ -65,32 +63,33 @@ function compareCards() {
     resultsArray = [];
     flippedCards = [];
 }
-
 function startTimer() {
     document.getElementById('title').style.display = 'none';
 
     tens++;
-    if (tens < 9) {
-        appendTens.innerHTML = "0" + tens;
-    }
-    if (tens > 9) {
-        appendTens.innerHTML = tens;
-    }
-    if (tens > 99) {
-        seconds++;
-        appendSeconds.innerHTML = "0" + seconds;
+    if (tens >= 100) {
         tens = 0;
-        appendTens.innerHTML = "0" + 0;
+        seconds++;
     }
-    if (seconds > 9) {
-        appendSeconds.innerHTML = seconds;
+    if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
     }
-}
 
+    appendTens.innerHTML = tens < 10 ? "0" + tens : tens;
+    appendSeconds.innerHTML = seconds < 10 ? "0" + seconds : seconds;
+}
 function win() {
     if (counter === 10) {
         clearInterval(Interval);
-        // Display congratulatory message
+        // Display congratulatory message with time
         document.getElementById('congratulations').style.display = 'flex';
+        document.getElementById('congratulations').querySelector('.congratulations_window').innerHTML = 
+            `<h1>Вітання, ви виграли!</h1>
+            <h3><p>Час: ${formatTime(minutes, seconds)}</p></h3>
+            <center><a href = "menu_ua.html"><button class = "popup-button">Спробувати знову</button></a></center>`;
     }
+}
+function formatTime(minutes, seconds) {
+    return `${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
 }

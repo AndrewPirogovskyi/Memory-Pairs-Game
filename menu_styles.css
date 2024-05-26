@@ -1,5 +1,5 @@
 body {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin: 0;
     padding: 0;
@@ -63,13 +63,13 @@ body {
     padding: 10px;
 }
 h1, h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 2.5em;
     text-transform: uppercase;
 }
 h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 2.1em;
     text-transform: uppercase;
@@ -101,13 +101,12 @@ h3 {
     transform: rotateY(180deg);
     width: 200px;
     height: 200px;
-    border: solid 1px #d3cece;
+    border: solid 1px white;
     border-radius: 8px;
     float: left;
     margin: 10px;
     cursor: pointer;
-    background: linear-gradient(135deg, #f3f3f3 22px, #fff 22px, #fff 24px, transparent 24px, transparent 67px, #fff 67px, #fff 69px, transparent 69px), linear-gradient(225deg, #f3f3f3 22px, #fff 22px, #fff 24px, transparent 24px, transparent 67px, #fff 67px, #fff 69px, transparent 69px) 0 64px;
-    background-color: #f3f3f3;
+    background-color: white;
     background-size: 64px 128px;
 }
 .flipped {
@@ -131,43 +130,43 @@ h3 {
 }
 /* Icons */
 .correct[data-item="1"], .flipped[data-item="1"] {
-    background: url("Cards/1.jpg") center no-repeat #fff;
+    background: url("Cards/1.jpg") center no-repeat white;
     background-size: contain;
 }
 .correct[data-item="2"], .flipped[data-item="2"] {
-    background: url("Cards/2.jpg") center no-repeat #fff;
+    background: url("Cards/2.jpg") center no-repeat white;
     background-size: contain;
 }
 .correct[data-item="3"], .flipped[data-item="3"] {
-    background: url("Cards/3.jpg") center no-repeat #fff;
+    background: url("Cards/3.jpg") center no-repeat white;
     background-size: contain;
 }
 .correct[data-item="4"], .flipped[data-item="4"] {
-    background: url("Cards/4.jpg") center no-repeat #fff;
+    background: url("Cards/4.jpg") center no-repeat white;
     background-size: contain;
 }
 .correct[data-item="5"], .flipped[data-item="5"] {
-    background: url("Cards/5.jpg") center no-repeat #fff;
+    background: url("Cards/5.jpg") center no-repeat white;
     background-size: contain;
 }
 .correct[data-item="6"], .flipped[data-item="6"] {
-    background: url("Cards/6.jpg") center no-repeat #fff;
+    background: url("Cards/6.jpg") center no-repeat white;
     background-size: contain;
 }
 .correct[data-item="7"], .flipped[data-item="7"] {
-    background: url("Cards/7.jpg") center no-repeat #fff;
+    background: url("Cards/7.jpg") center no-repeat white;
     background-size: contain;
 }
 .correct[data-item="8"], .flipped[data-item="8"] {
-    background: url("Cards/8.jpg") center no-repeat #fff;
+    background: url("Cards/8.jpg") center no-repeat white;
     background-size: contain;
 }
 .correct[data-item="9"], .flipped[data-item="9"] {
-    background: url("Cards/9.jpg") center no-repeat #fff;
+    background: url("Cards/9.jpg") center no-repeat white;
     background-size: contain;
 }
 .correct[data-item="10"], .flipped[data-item="10"] {
-    background: url("Cards/10.jpg") center no-repeat #fff;
+    background: url("Cards/10.jpg") center no-repeat white;
     background-size: contain;
 }
 .popup-container {
@@ -185,7 +184,7 @@ h3 {
 .popup {
     background-color: black;
     padding: 20px;
-    height: 300px;
+    height: 320px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
