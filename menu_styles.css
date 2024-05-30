@@ -107,7 +107,8 @@ h3 {
     margin: 10px;
     cursor: pointer;
     background-color: white;
-    background-size: 64px 128px;
+    background-size: cover;
+    background-position: center;
 }
 .flipped {
     transition: 0.5s;
@@ -130,44 +131,34 @@ h3 {
 }
 /* Icons */
 .correct[data-item="1"], .flipped[data-item="1"] {
-    background: url("Cards/1.jpg") center no-repeat white;
-    background-size: contain;
+    background: url("Cards/1.jpg") center center / cover no-repeat;
 }
 .correct[data-item="2"], .flipped[data-item="2"] {
-    background: url("Cards/2.jpg") center no-repeat white;
-    background-size: contain;
+    background: url("Cards/2.jpg") center center / cover no-repeat;
 }
 .correct[data-item="3"], .flipped[data-item="3"] {
-    background: url("Cards/3.jpg") center no-repeat white;
-    background-size: contain;
+    background: url("Cards/3.jpg") center center / cover no-repeat;
 }
 .correct[data-item="4"], .flipped[data-item="4"] {
-    background: url("Cards/4.jpg") center no-repeat white;
-    background-size: contain;
+    background: url("Cards/4.jpg") center center / cover no-repeat;
 }
 .correct[data-item="5"], .flipped[data-item="5"] {
-    background: url("Cards/5.jpg") center no-repeat white;
-    background-size: contain;
+    background: url("Cards/5.jpg") center center / cover no-repeat;
 }
 .correct[data-item="6"], .flipped[data-item="6"] {
-    background: url("Cards/6.jpg") center no-repeat white;
-    background-size: contain;
+    background: url("Cards/6.jpg") center center / cover no-repeat;
 }
 .correct[data-item="7"], .flipped[data-item="7"] {
-    background: url("Cards/7.jpg") center no-repeat white;
-    background-size: contain;
+    background: url("Cards/7.jpg") center center / cover no-repeat;
 }
 .correct[data-item="8"], .flipped[data-item="8"] {
-    background: url("Cards/8.jpg") center no-repeat white;
-    background-size: contain;
+    background: url("Cards/8.jpg") center center / cover no-repeat;
 }
 .correct[data-item="9"], .flipped[data-item="9"] {
-    background: url("Cards/9.jpg") center no-repeat white;
-    background-size: contain;
+    background: url("Cards/9.jpg") center center / cover no-repeat;
 }
 .correct[data-item="10"], .flipped[data-item="10"] {
-    background: url("Cards/10.jpg") center no-repeat white;
-    background-size: contain;
+    background: url("Cards/10.jpg") center center / cover no-repeat;
 }
 .popup-container {
     position: fixed;
